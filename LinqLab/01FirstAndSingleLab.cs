@@ -17,42 +17,42 @@ namespace LinqLab
 
         public Sample FirstToGetUserNameEqualToDemo()
         {
-            var result = new Sample();
+            var result = Source.First(s => s.UserName == "demo");
             return result;
         }
 
         public Sample FirstOrDefaultToGetUserNameEuqalToSkilltree()
         {
-            var result = new Sample();
+            var result = Source.FirstOrDefault(s => s.UserName == "SkillTree");
             return result;
         }
 
         public Sample FirstToGetUserNameEuqalToSkilltree()
         {
-            var result = new Sample();
+            var result = Source.First(s => s.UserName == "SkillTree");
             return result;
         }
 
         public Sample SingleToGetUserNameEuqalToDemo()
         {
-            var result = new Sample();
+            var result = Source.Single(s => s.UserName == "Demo");
             return result;
         }
 
         public Sample SingleToGetUserNameEuqalToBill()
         {
-            var result = new Sample();
+            var result = Source.Single(s => s.UserName == "bill");
             return result;
         }
         public Sample SingleOrDefaultToGetUserNameEuqalToBill()
         {
-            var result = new Sample();
+            var result = Source.SingleOrDefault(s => s.UserName == "bill");
             return result;
         }
 
         public Sample SingleOrDefaultToGetUserNameEuqalToSkillTree()
         {
-            var result = new Sample();
+            var result = Source.SingleOrDefault(s => s.UserName == "SkillTree");
             return result;
         }
     }
